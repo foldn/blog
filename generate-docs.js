@@ -78,34 +78,76 @@ function scanDirectory(dirPath, basePath = '') {
 }
 
 /**
- * 生成 home.md 内容
+ * 递归生成 home.md 内容（支持多层目录结构）
  */
-function generateHomeContent(structure, currentPath = '') {
-  let content = '# 目录\n\n';
+function generateHomeContent(structure, level = 0, currentPath = '') {
+  let content = '';
+
+  if (level === 0) {
+    content = '# 目录\n\n';
+  }
+
+  const indent = '  '.repeat(level);
   let index = 1;
 
-  // 首先列出子目录
+  // 递归处理子目录
   structure.children.forEach(child => {
-    content += `${index}. ${child.name}\n`;
+    content += `${indent}${index}. ${child.name}\n`;
 
-    // 如果子目录有文件，列出文件
+    // 递归展示子目录的文件
     if (child.files && child.files.length > 0) {
       child.files.forEach(file => {
-        const linkPath = `./${child.name}/${file.name}`;
-        content += `    - [${file.title}](${linkPath})\n`;
+        const relativePath = currentPath ? `${currentPath}/${child.name}` : child.name;
+        const linkPath = `./${relativePath}/${file.name}`;
+        content += `${indent}    - [${file.title}](${linkPath})\n`;
       });
+    }
+
+    // 递归处理更深层级的子目录
+    if (child.children && child.children.length > 0) {
+      const childPath = currentPath ? `${currentPath}/${child.name}` : child.name;
+      const subContent = generateHomeContentRecursive(child, level + 1, childPath);
+      content += subContent;
     }
 
     index++;
   });
 
-  // 然后列出当前目录的文件
+  // 列出当前目录的文件
   if (structure.files && structure.files.length > 0) {
     structure.files.forEach(file => {
-      content += `${index}. [${file.title}](./${file.name})\n`;
+      content += `${indent}${index}. [${file.title}](./${file.name})\n`;
       index++;
     });
   }
+
+  return content;
+}
+
+/**
+ * 递归生成子目录内容
+ */
+function generateHomeContentRecursive(structure, level, currentPath) {
+  let content = '';
+  const indent = '  '.repeat(level);
+
+  structure.children.forEach((child, idx) => {
+    const relativePath = `${currentPath}/${child.name}`;
+    content += `${indent}    ${idx + 1}. ${child.name}\n`;
+
+    // 显示该子目录的文件
+    if (child.files && child.files.length > 0) {
+      child.files.forEach(file => {
+        const linkPath = `./${relativePath}/${file.name}`;
+        content += `${indent}        - [${file.title}](${linkPath})\n`;
+      });
+    }
+
+    // 继续递归
+    if (child.children && child.children.length > 0) {
+      content += generateHomeContentRecursive(child, level + 1, relativePath);
+    }
+  });
 
   return content;
 }
@@ -127,6 +169,60 @@ function generateHomeFiles(structure, basePath = DOCS_DIR) {
 }
 
 /**
+ * 递归生成 sidebar 项（支持多层嵌套，最多6层）
+ */
+function generateSidebarItems(node, basePath, currentLevel = 0, maxLevel = 6) {
+  const items = [];
+
+  // 如果超过最大层级，不再递归
+  if (currentLevel >= maxLevel) {
+    return items;
+  }
+
+  // 遍历子目录
+  node.children.forEach(child => {
+    const group = {
+      text: child.name,
+      collapsed: true,
+      items: []
+    };
+
+    // 添加当前目录的文件
+    if (child.files && child.files.length > 0) {
+      child.files.forEach(file => {
+        const link = `${basePath}${child.name}/${file.title}`;
+        group.items.push({
+          text: file.title,
+          link: link
+        });
+      });
+    }
+
+    // 如果有子目录，递归生成子项
+    if (child.children && child.children.length > 0) {
+      const subItems = generateSidebarItems(
+        child,
+        `${basePath}${child.name}/`,
+        currentLevel + 1,
+        maxLevel
+      );
+
+      // 将子项作为嵌套的 items 添加
+      if (subItems.length > 0) {
+        group.items.push(...subItems);
+      }
+    }
+
+    // 只有当该组有内容时才添加
+    if (group.items.length > 0) {
+      items.push(group);
+    }
+  });
+
+  return items;
+}
+
+/**
  * 生成 sidebar 配置
  */
 function generateSidebarConfig(structure) {
@@ -143,29 +239,11 @@ function generateSidebarConfig(structure) {
       }
     ];
 
-    // 添加子目录作为折叠组
-    child.children.forEach(subChild => {
-      const group = {
-        text: subChild.name,
-        collapsed: true,
-        items: []
-      };
+    // 递归生成子目录的 sidebar 项
+    const sidebarItems = generateSidebarItems(child, path, 1, 6);
+    sidebar[path].push(...sidebarItems);
 
-      // 添加子目录中的文件
-      if (subChild.files && subChild.files.length > 0) {
-        subChild.files.forEach(file => {
-          const link = `${path}${subChild.name}/${file.title}`;
-          group.items.push({
-            text: file.title,
-            link: link
-          });
-        });
-      }
-
-      sidebar[path].push(group);
-    });
-
-    // 添加当前目录的文件
+    // 添加当前目录的直接文件（如果有）
     if (child.files && child.files.length > 0) {
       const directFiles = {
         text: '其他',

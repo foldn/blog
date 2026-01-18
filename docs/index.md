@@ -1,10 +1,8 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
 hero:
-  name: "foldndoc"
-  text: "foldn doc"
+  name: foldndoc
+  text: foldn doc
   tagline: My great project tagline
   actions:
     - theme: brand
@@ -13,7 +11,6 @@ hero:
     - theme: alt
       text: 开发
       link: /dev/bbb
-
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit

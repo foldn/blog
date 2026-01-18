@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "9ed628d3b9bb343c",
+    "type": "split",
+    "children": [
+      {
+        "id": "3e174230874a2034",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a74a9f1deec2aa9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/dev/jerbrains破解.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "jerbrains破解"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fc7f3cf2c96a75bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4e753e6024bbd27",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b06316fd465645a6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "bec74896a98cc9a0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "822ea9cfcf3a776f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "570e0c3e467051f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb979f2815647c6b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9c94e3a37c46018",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/dev/jerbrains破解.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "jerbrains破解 的反向链接列表"
+            }
+          },
+          {
+            "id": "5d7728e9a896a3e3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/dev/jerbrains破解.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "jerbrains破解 的出链列表"
+            }
+          },
+          {
+            "id": "b4f342a490ef5f71",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "6158de266d414207",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/dev/jerbrains破解.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "jerbrains破解 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "6a74a9f1deec2aa9",
+  "lastOpenFiles": [
+    "docs/index.md",
+    "docs/interview/aaa.md",
+    "docs/interview/最小路径和（DFS）.md",
+    "docs/dev/jerbrains破解.md",
+    "generate-docs.md",
+    "README.md",
+    "package-lock.json",
+    "package.json",
+    "LICENSE",
+    "generate-docs.js",
+    "docs/interview",
+    "docs/dev",
+    "docs",
+    "blog/package.json",
+    "blog/package-lock.json",
+    "blog/generate-docs.md",
+    "blog/generate-docs.js",
+    "blog/docs/interview/最小路径和（DFS）.md",
+    "blog/docs/interview/aaa.md",
+    "blog/docs/dev/jerbrains破解.md",
+    "blog/docs/index.md",
+    "blog/README.md",
+    "欢迎.md"
+  ]
+}

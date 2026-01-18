@@ -150,9 +150,19 @@
               "icon": "lucide-list",
               "title": "jerbrains破解 的大纲"
             }
+          },
+          {
+            "id": "71fa460b7396f2b8",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -160,6 +170,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -169,8 +180,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6a74a9f1deec2aa9",
+  "active": "b06316fd465645a6",
   "lastOpenFiles": [
+    "docs/interview/消息队列",
+    "docs/interview/算法",
     "docs/index.md",
     "docs/interview/aaa.md",
     "docs/interview/最小路径和（DFS）.md",
@@ -187,7 +200,6 @@
     "blog/package.json",
     "blog/package-lock.json",
     "blog/generate-docs.md",
-    "blog/generate-docs.js",
     "blog/docs/interview/最小路径和（DFS）.md",
     "blog/docs/interview/aaa.md",
     "blog/docs/dev/jerbrains破解.md",

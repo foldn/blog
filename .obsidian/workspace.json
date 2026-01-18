@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/消息队列/kafka.md",
+                "file": "docs/interview/redis/redis的持久机制.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "kafka"
+              "title": "redis的持久机制"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/消息队列/kafka.md",
+                "file": "docs/interview/redis/redis的持久机制.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "kafka 的大纲"
+              "title": "redis的持久机制 的大纲"
             }
           },
           {
@@ -182,8 +182,9 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
-    "docs/interview/home.md",
     "docs/interview/消息队列/kafka.md",
+    "docs/interview/redis/redis的持久机制.md",
+    "docs/interview/home.md",
     "docs/index.md",
     "docs/dev/home.md",
     "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-latin.woff2",
@@ -216,7 +217,6 @@
     "node_modules/character-entities-html4/readme.md",
     "node_modules/@esbuild/win32-x64/README.md",
     "node_modules/@algolia/client-insights/README.md",
-    "node_modules/@algolia/recommend/README.md",
-    "node_modules/@algolia/client-analytics/README.md"
+    "node_modules/@algolia/recommend/README.md"
   ]
 }

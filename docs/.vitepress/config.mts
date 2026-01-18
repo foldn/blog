@@ -9,8 +9,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '面试', link: '/interview/最小路径和（DFS）' },
-      { text: '开发', link: '/dev/jerbrains破解' }
+      { text: '面试', link: '/interview/home' },
+      { text: '开发', link: '/dev/home' }
     ],
 
     sidebar: {

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/dev/home.md",
+                "file": "docs/interview/消息队列/kafka.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "home"
+              "title": "kafka"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/dev/jerbrains破解.md",
-                "followCursor": false,
+                "file": "docs/interview/消息队列/kafka.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "jerbrains破解 的大纲"
+              "title": "kafka 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -182,6 +182,8 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
+    "docs/index.md",
+    "docs/dev/home.md",
     "docs/interview/home.md",
     "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-latin.woff2",
     "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-latin-ext.woff2",
@@ -215,8 +217,6 @@
     "node_modules/@algolia/client-insights/README.md",
     "node_modules/@algolia/recommend/README.md",
     "node_modules/@algolia/client-analytics/README.md",
-    "node_modules/@algolia/client-abtesting/README.md",
-    "node_modules/@jridgewell/sourcemap-codec/README.md",
-    "node_modules/@algolia/client-search/README.md"
+    "node_modules/@algolia/client-abtesting/README.md"
   ]
 }

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/消息队列/kafka.md",
+                "file": "docs/index.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "kafka"
+              "title": "index"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/消息队列/kafka.md",
+                "file": "docs/index.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "kafka 的大纲"
+              "title": "index 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -182,6 +182,7 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
+    "docs/interview/消息队列/kafka.md",
     "docs/index.md",
     "docs/dev/home.md",
     "docs/interview/home.md",
@@ -216,7 +217,6 @@
     "node_modules/@esbuild/win32-x64/README.md",
     "node_modules/@algolia/client-insights/README.md",
     "node_modules/@algolia/recommend/README.md",
-    "node_modules/@algolia/client-analytics/README.md",
-    "node_modules/@algolia/client-abtesting/README.md"
+    "node_modules/@algolia/client-analytics/README.md"
   ]
 }

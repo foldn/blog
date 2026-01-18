@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/dev/jerbrains破解.md",
+                "file": "README.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "jerbrains破解"
+              "title": "README"
             }
           }
         ]
@@ -180,14 +180,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b06316fd465645a6",
+  "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
+    "docs/dev/jerbrains破解.md",
     "docs/interview/消息队列",
     "docs/interview/算法",
     "docs/index.md",
     "docs/interview/aaa.md",
     "docs/interview/最小路径和（DFS）.md",
-    "docs/dev/jerbrains破解.md",
     "generate-docs.md",
     "README.md",
     "package-lock.json",
@@ -198,7 +198,6 @@
     "docs/dev",
     "docs",
     "blog/package.json",
-    "blog/package-lock.json",
     "blog/generate-docs.md",
     "blog/docs/interview/最小路径和（DFS）.md",
     "blog/docs/interview/aaa.md",

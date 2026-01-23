@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/dev/vpn.md",
+                "file": "generate-docs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vpn"
+              "title": "generate-docs"
             }
           }
         ]
@@ -182,8 +182,9 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
-    "docs/dev/jerbrains破解.md",
+    "docs/dev/常用网站.md",
     "docs/dev/vpn.md",
+    "docs/dev/jerbrains破解.md",
     "docs/dev/home.md",
     "docs/interview/redis/redis场景题.md",
     "docs/interview/redis/redis的key过期机制.md",
@@ -216,7 +217,6 @@
     "node_modules/copy-anything/README.md",
     "node_modules/@vercel/oidc/docs/README.md",
     "node_modules/@algolia/client-personalization/README.md",
-    "node_modules/birpc/README.md",
-    "node_modules/picocolors/README.md"
+    "node_modules/birpc/README.md"
   ]
 }

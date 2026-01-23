@@ -11,11 +11,12 @@
 		1. 校验数据格式
 		2. 写入page cache
 		3. 顺序追加到log segment
-		4. 更新Log End Offset
 	4. topic的leader broker实例化完成之后，会启动isr，也就是副本同步机制（这个过程是follower自己进行的，不是leader主动发起的）
-		1. follower会拉取leader broker的数据（主要是leo）
-		2. 根据最新的leo，将相关数据更新到follower本地的log segment
+		1. follower会拉取leader broker的数据
+		2. 将相关数据更新到follower本地的log segment
 		3. 所有follower更新完成后发送ack给leader broker
+	5. 当所有follower broker都实例化完成后，leader 会执行log end offset（这个操作可以理解为更新最新的消息游标，此后的数据可以被消费者拉取到）
+	6. 消费者通过循环的poll操作，从broker中拉取数据
 
 > [!NOTE]
 > 总结：

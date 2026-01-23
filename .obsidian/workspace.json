@@ -11,14 +11,10 @@
             "id": "6a74a9f1deec2aa9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/interview/消息队列/kafka.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "kafka"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ]
@@ -94,13 +90,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/消息队列/kafka.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "kafka 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -134,14 +129,17 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
-    "docs/index.md",
+    "node_modules/postcss/README.md",
+    "docs/interview/home.md",
+    "README.md",
+    "docs/interview/redis/redis的持久机制.md",
     "docs/interview/消息队列/kafka.md",
+    "docs/index.md",
     "docs/interview/场景题",
     "docs/interview/java/jvm.md",
     "docs/interview/go",
     "docs/dev/常用网站.md",
     "docs/interview/java",
-    "README.md",
     "node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.umd.js.map",
     "node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.umd.js",
     "node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.mjs.map",
@@ -166,9 +164,6 @@
     "node_modules/eventsource-parser/README.md",
     "node_modules/focus-trap/SECURITY.md",
     "node_modules/focus-trap/README.md",
-    "node_modules/focus-trap/CHANGELOG.md",
-    "node_modules/stringify-entities/readme.md",
-    "node_modules/@docsearch/css/README.md",
-    "node_modules/unist-util-visit/readme.md"
+    "node_modules/focus-trap/CHANGELOG.md"
   ]
 }

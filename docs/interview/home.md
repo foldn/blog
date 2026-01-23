@@ -2,7 +2,7 @@
 
 1. mysql
 2. redis
-    - [redis场景题](./redis/redis场景题.md)
+    - [redis事务](redis事务.md)
     - [redis的key过期机制](./redis/redis的key过期机制.md)
     - [redis的主从复制原理](./redis/redis的主从复制原理.md)
     - [redis的分片原理](./redis/redis的分片原理.md)

@@ -89,66 +89,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c9c94e3a37c46018",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "docs/dev/jerbrains破解.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "jerbrains破解 的反向链接列表"
-            }
-          },
-          {
-            "id": "5d7728e9a896a3e3",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "docs/dev/jerbrains破解.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "jerbrains破解 的出链列表"
-            }
-          },
-          {
-            "id": "b4f342a490ef5f71",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
-          },
-          {
             "id": "6158de266d414207",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/interview/redis/redis场景题.md",
+                "file": "docs/interview/消息队列/kafka.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "redis场景题 的大纲"
+              "title": "kafka 的大纲"
             }
           },
           {
@@ -161,8 +113,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -182,6 +133,7 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
+    "docs/interview/场景题",
     "docs/interview/java/jvm.md",
     "docs/interview/go",
     "docs/dev/常用网站.md",

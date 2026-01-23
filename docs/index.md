@@ -7,10 +7,10 @@ hero:
   actions:
     - theme: brand
       text: 面试
-      link: /interview/aaa
+      link: /interview/home
     - theme: alt
       text: 开发
-      link: /dev/bbb
+      link: /dev/home
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit

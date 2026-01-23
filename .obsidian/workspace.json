@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/interview/消息队列/kafka.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "kafka"
             }
           }
         ]
@@ -94,13 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/interview/消息队列/kafka.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "kafka 的大纲"
             }
           },
           {
@@ -134,6 +134,7 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
+    "docs/index.md",
     "docs/interview/消息队列/kafka.md",
     "docs/interview/场景题",
     "docs/interview/java/jvm.md",
@@ -168,7 +169,6 @@
     "node_modules/focus-trap/CHANGELOG.md",
     "node_modules/stringify-entities/readme.md",
     "node_modules/@docsearch/css/README.md",
-    "node_modules/unist-util-visit/readme.md",
-    "node_modules/@ai-sdk/gateway/CHANGELOG.md"
+    "node_modules/unist-util-visit/readme.md"
   ]
 }

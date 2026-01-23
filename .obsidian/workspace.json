@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/java/jvm.md",
+                "file": "docs/interview/消息队列/kafka.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "jvm"
+              "title": "kafka"
             }
           }
         ]
@@ -182,8 +182,9 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
-    "docs/dev/常用网站.md",
     "docs/interview/java/jvm.md",
+    "docs/interview/go",
+    "docs/dev/常用网站.md",
     "docs/interview/java",
     "README.md",
     "node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.umd.js.map",
@@ -195,7 +196,6 @@
     "node_modules/picocolors/README.md",
     "node_modules/picocolors/picocolors.js",
     "node_modules/picocolors/picocolors.d.ts",
-    "node_modules/picocolors/picocolors.browser.js",
     "node_modules/regex-utilities/README.md",
     "node_modules/comma-separated-tokens/readme.md",
     "node_modules/@vueuse/integrations/README.md",
@@ -216,7 +216,6 @@
     "node_modules/stringify-entities/readme.md",
     "node_modules/@docsearch/css/README.md",
     "node_modules/unist-util-visit/readme.md",
-    "node_modules/@ai-sdk/gateway/CHANGELOG.md",
-    "node_modules/picomatch/README.md"
+    "node_modules/@ai-sdk/gateway/CHANGELOG.md"
   ]
 }

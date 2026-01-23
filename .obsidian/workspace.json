@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/dev/home.md",
+                "file": "docs/dev/vpn.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "home"
+              "title": "vpn"
             }
           }
         ]
@@ -183,6 +183,8 @@
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
     "docs/dev/jerbrains破解.md",
+    "docs/dev/vpn.md",
+    "docs/dev/home.md",
     "docs/interview/redis/redis场景题.md",
     "docs/interview/redis/redis的key过期机制.md",
     "docs/interview/redis/redis的哨兵模式.md",
@@ -192,7 +194,6 @@
     "docs/interview/消息队列/kafka.md",
     "docs/interview/home.md",
     "docs/index.md",
-    "docs/dev/home.md",
     "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-latin.woff2",
     "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-latin-ext.woff2",
     "node_modules/vitepress/dist/client/theme-default/fonts/inter-roman-vietnamese.woff2",
@@ -216,7 +217,6 @@
     "node_modules/@vercel/oidc/docs/README.md",
     "node_modules/@algolia/client-personalization/README.md",
     "node_modules/birpc/README.md",
-    "node_modules/picocolors/README.md",
-    "node_modules/regex-utilities/README.md"
+    "node_modules/picocolors/README.md"
   ]
 }

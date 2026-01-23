@@ -113,7 +113,8 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -131,7 +132,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6a74a9f1deec2aa9",
+  "active": "71fa460b7396f2b8",
   "lastOpenFiles": [
     "docs/interview/场景题",
     "docs/interview/java/jvm.md",

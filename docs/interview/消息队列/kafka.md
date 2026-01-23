@@ -57,8 +57,9 @@ Kafka 中一条消息的传输过程可以分为 **生产者端、Broker 端、�
 9. 当业务处理完成后，消费者向 **GroupCoordinator** 提交消费位点（offset），该位点会被写入 `__consumer_offsets` 主题中，用于记录消费进度，保证后续不会重复消费。
 
 > [!NOTE] 总结
->Kafka 中消息先在 Producer 端完成序列化与分区并进入内存批次，由 leader broker 顺序写入日志并同步到 ISR 副本，在推进 High Watermark 后对 Consumer 可见，消费者处理完成后通过提交 offset 标记消费进度。
+>Kafka 中消息先在 **Producer** 端完成序列化与分区并进入内存批次，由 **leader broker 顺序追加写入日志**，并同步到 **ISR 副本**；在推进 **High Watermark（HW）** 后消息对 **Consumer** 可见，消费者处理完成后通过 **提交 offset** 标记消费进度
 >
+>生产者 → 序列化 → 分区选路 → 批量缓冲 → 发送至 leader broker → leader broker 顺序写日志 → ISR 中 follower 副本同步 → leader broker 推进 HW → poll 拉取消息消费 → 提交 offset
 ## kafka如何保证消息的幂等性
 ## kafka的isr机制
 ## kafka如何保证消息可靠性

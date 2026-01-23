@@ -10,13 +10,16 @@
 	3. 指定topic的leader broker在获取到生产者发送的消息请求后，会校验请求合法性，并将消息顺序追加写入本地日志文件。（kafaka是顺序读写，不是随机读写）
 		1. 校验数据格式
 		2. 顺序追加到log segment
-		3. 通过操作系统先存储到page cache，然后异步刷盘，实际写入log segment·
-	4. topic的leader broker实例化完成之后，会启动isr，也就是副本同步机制（这个过程是follower自己进行的，不是leader主动发起的）
+		3. 通过操作系统先存储到page cache，然后异步刷盘，实际写入log segment
+		4. 更新leo（log end offset）
+	4. topic的leader broker日志文件追加完成之后，会启动isr，也就是副本同步机制（这个过程是follower自己进行的，不是leader主动发起的）
 		1. follower会拉取leader broker的数据
 		2. 将相关数据更新到follower本地的log segment
 		3. follower更新完成后发送ack给leader broker
-	5. 当所有follower broker都实例化完成后，leader 会执行log end offset（这个操作可以理解为更新最新的消息游标，此后的数据可以被消费者拉取到）
-		1. isr
+	5. 当isr中的follower broker都完成log segment后，leader 会执行log end offset（这个操作可以理解为更新最新的消息游标，此后的数据可以被消费者拉取到）
+		1. isr是一个同步副本队列，是随着broker的状态动态变化的
+		2. 每一个follower broker管理自己的leo（log end offset）
+		3. leaser broker维护一个最大log end offset
 	6. 消费者通过循环的poll操作，从leader broker中拉取数据
 	7. 消费者中执行我们自己的业务逻辑
 	8. 消费者端执行完成后，会向leader broker提交消费者端的offset，保证消费者端后续不会重新消费

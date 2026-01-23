@@ -30,6 +30,14 @@ export default defineConfig({
         {
           text: 'jerbrains破解',
           link: '/dev/jerbrains破解'
+        },
+        {
+          text: 'vpn',
+          link: '/dev/vpn'
+        },
+        {
+          text: '常用网站',
+          link: '/dev/常用网站'
         }
       ]
     }
@@ -40,6 +48,36 @@ export default defineConfig({
         {
           text: '目录',
           link: '/interview/home'
+        }
+      ]
+    },
+    {
+      text: 'redis',
+      collapsed: true,
+      items: [
+        {
+          text: 'redis场景题',
+          link: '/interview/redis/redis场景题'
+        },
+        {
+          text: 'redis的key过期机制',
+          link: '/interview/redis/redis的key过期机制'
+        },
+        {
+          text: 'redis的主从复制原理',
+          link: '/interview/redis/redis的主从复制原理'
+        },
+        {
+          text: 'redis的分片原理',
+          link: '/interview/redis/redis的分片原理'
+        },
+        {
+          text: 'redis的哨兵模式',
+          link: '/interview/redis/redis的哨兵模式'
+        },
+        {
+          text: 'redis的持久机制',
+          link: '/interview/redis/redis的持久机制'
         }
       ]
     },

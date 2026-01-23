@@ -5,17 +5,18 @@
 		1. 分区选择方式（key一般是消息id）
 			1. 指定partition：直接选择
 			2. 有 key → hash(key) % partitions
-			3. 无 key → StickyPartitioner（批量友好），粘性分区，保证尽量将消息推送到同一个分区
+			3. 无 key → StickyPartitioner（批量友好），粘性分区，，在一个批次内尽量发送到同一个 partition，以提升批量发送效率，当批次发送完成后再重新选择分区。
 	2. 生产者端将消息存储到内存批次中，等到批次已满或者到达最大等待时间，将消息推送到指定topic的leader broker中
-	3. 指定topic的leader broker在获取到生产者发送的消息请求后，会进行一系列的消息实例化（kafaka是顺序读写，不是随机读写）
+	3. 指定topic的leader broker在获取到生产者发送的消息请求后，会校验请求合法性，并将消息顺序追加写入本地日志文件。（kafaka是顺序读写，不是随机读写）
 		1. 校验数据格式
-		2. 写入page cache
-		3. 顺序追加到log segment
+		2. 顺序追加到log segment
+		3. 通过操作系统先存储到page cache，然后异步刷盘，实际写入log segment·
 	4. topic的leader broker实例化完成之后，会启动isr，也就是副本同步机制（这个过程是follower自己进行的，不是leader主动发起的）
 		1. follower会拉取leader broker的数据
 		2. 将相关数据更新到follower本地的log segment
-		3. 所有follower更新完成后发送ack给leader broker
+		3. follower更新完成后发送ack给leader broker
 	5. 当所有follower broker都实例化完成后，leader 会执行log end offset（这个操作可以理解为更新最新的消息游标，此后的数据可以被消费者拉取到）
+		1. isr
 	6. 消费者通过循环的poll操作，从leader broker中拉取数据
 	7. 消费者中执行我们自己的业务逻辑
 	8. 消费者端执行完成后，会向leader broker提交消费者端的offset，保证消费者端后续不会重新消费

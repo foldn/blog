@@ -22,7 +22,7 @@
 		3. leaser broker维护一个最大log end offset（这个对消费者可见）
 	6. 消费者通过循环的poll操作，从leader broker中拉取数据
 	7. 消费者中执行我们自己的业务逻辑
-	8. 消费者端执行完成后，会向leader broker提交消费者端的offset，保证消费者端后续不会重新消费
+	8. 消费者端执行完成后，会向 GroupCoordinator 提交消费位点（offset），该位点会被写入 __consumer_offsets 主题中，用于记录消费进度费
 
 > [!NOTE]
 > 总结：

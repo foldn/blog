@@ -1,7 +1,7 @@
 ## kafka的消息传输流程
 
 	首先kafka的消息消费分为三个阶段，生产者端、broker端、消费者端，三个端之间通过交互实现消息的顺利传输
-	1. 生产者者端，调用send方法，生产者对消息进行序列化，转化为字节数组，通过分区优化，选择要将该消息推送到配置的topic下的哪一个topic
+	1. 生产者者端，调用send方法，生产者对消息进行序列化，转化为字节数组，通过分区优化，选择要将该消息推送到配置的topic下的哪一个partition
 		1. 分区选择方式（key一般是消息id）
 			1. 指定partition：直接选择
 			2. 有 key → hash(key) % partitions
@@ -16,7 +16,9 @@
 		2. 将相关数据更新到follower本地的log segment
 		3. 所有follower更新完成后发送ack给leader broker
 	5. 当所有follower broker都实例化完成后，leader 会执行log end offset（这个操作可以理解为更新最新的消息游标，此后的数据可以被消费者拉取到）
-	6. 消费者通过循环的poll操作，从broker中拉取数据
+	6. 消费者通过循环的poll操作，从leader broker中拉取数据
+	7. 消费者中执行我们自己的业务逻辑
+	8. 消费者端执行完成后，会向leader broker提交消费者端的offset，保证消费者端后续不会重新消费
 
 > [!NOTE]
 > 总结：

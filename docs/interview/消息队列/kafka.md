@@ -1,13 +1,13 @@
 ## kafka的消息传输流程
 
-kafka的消息传输主要依靠三个端，生产者端、broker端、消费者端，三个端之间通过交互实现消息的顺利传输
+Kafka 中一条消息的传输过程可以分为生产者端、Broker 端和消费者端三个阶段
 1. 生产者者端，调用send方法，生产者对消息进行序列化，转化为字节数组，通过分区优化，选择要将该消息推送到配置的topic下的哪一个partition
 	1. 分区选择方式（key一般是消息id）
 		1. 指定partition：直接选择
 		2. 有 key → hash(key) % partitions
 		3. 无 key → StickyPartitioner（批量友好），粘性分区，，在一个批次内尽量发送到同一个 partition，以提升批量发送效率，当批次发送完成后再重新选择分区。
-2. 生产者端将消息存储到内存批次中，等到批次已满或者到达最大等待时间，将消息推送到指定topic的leader broker中
-3. 指定topic的leader broker在获取到生产者发送的消息请求后，会校验请求合法性，并将消息顺序追加写入本地日志文件。（kafaka是顺序读写，不是随机读写）
+2. 生产者端将消息存储到内存批次中，等到批次已满或者到达最大等待时间，将消息推送到指定partition的leader broker中
+3. 指定partition的leader broker在获取到生产者发送的消息请求后，会校验请求合法性，并将消息顺序追加写入本地日志文件。（kafaka是顺序读写，不是随机读写）
 	1. 校验数据格式
 	2. 顺序追加到log segment
 	3. 通过操作系统先存储到page cache，然后异步刷盘，实际写入log segment

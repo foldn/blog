@@ -61,6 +61,7 @@ Kafka 中一条消息的传输过程可以分为 **生产者端、Broker 端、�
 >
 >生产者 → 序列化 → 分区选路 → 批量缓冲 → 发送至 leader broker → leader broker 顺序写日志 → ISR 中 follower 副本同步 → leader broker 推进 HW → poll 拉取消息消费 → 提交 offset
 ## kafka如何保证消息的幂等性
+
 ## kafka的isr机制
 ## kafka如何保证消息可靠性
 ## kafka的消息存储结构

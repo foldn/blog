@@ -6,8 +6,13 @@
 			1. 指定partition：直接选择
 			2. 有 key → hash(key) % partitions
 			3. 无 key → StickyPartitioner（批量友好），粘性分区，保证尽量将消息推送到同一个分区
-	2. 生产者端将消息存储到内存批次中，等到批次已满或者到达最大等待时间，将消息推送到指定topic的leader broker中
-	3. 
+	2. 生产者端将消息存储到内存批次中，等到批次已满或者到达最大等待时间，将消息推送到指定topic的leader broker中（kafaka是顺序读写，不是随机读写）
+		1. 校验数据格式
+		2. 写入page cache
+		3. 顺序追加到log segment
+		4. 更新Log End Offset
+	3. 指定topic的leader broker在获取到生产者发送的消息请求后，会进行一系列的消息实例化
+	4. 
 
 > [!NOTE]
 > 总结：
@@ -16,3 +21,5 @@
 ## kafka的isr机制
 ## kafka如何保证消息可靠性
 ## kafka的消息存储结构
+
+[^1]: 

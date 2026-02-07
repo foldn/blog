@@ -181,9 +181,10 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
+    "docs/interview/redis/redis的持久机制.md",
+    "docs/dev/home.md",
     "docs/interview/home.md",
     "docs/interview/redis/redis事务.md",
-    "docs/interview/redis/redis的持久机制.md",
     "docs/interview/redis/redis的分片原理.md",
     "docs/interview/redis/redis的哨兵模式.md",
     "docs/interview/redis/redis的主从复制原理.md",
@@ -215,7 +216,6 @@
     "node_modules/@iconify-json/simple-icons/README.md",
     "node_modules/@algolia/abtesting/README.md",
     "node_modules/@algolia/autocomplete-plugin-algolia-insights/README.md",
-    "node_modules/@algolia/autocomplete-core/README.md",
-    "node_modules/@algolia/client-analytics/README.md"
+    "node_modules/@algolia/autocomplete-core/README.md"
   ]
 }

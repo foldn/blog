@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/interview/home.md",
+                "file": "docs/dev/home.md",
                 "mode": "source",
                 "source": false
               },
@@ -181,8 +181,8 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
-    "docs/interview/redis/redis事务.md",
     "docs/interview/home.md",
+    "docs/interview/redis/redis事务.md",
     "docs/interview/redis/redis的持久机制.md",
     "docs/interview/redis/redis的分片原理.md",
     "docs/interview/redis/redis的哨兵模式.md",

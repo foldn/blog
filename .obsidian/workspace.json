@@ -11,14 +11,14 @@
             "id": "6a74a9f1deec2aa9",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".gitignore",
-                "bFile": ".gitignore",
-                "aRef": ""
+                "file": "docs/interview/home.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: .gitignore  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "home"
             }
           }
         ]
@@ -181,8 +181,13 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
-    "docs/interview/home.md",
     "docs/interview/redis/redis事务.md",
+    "docs/interview/home.md",
+    "docs/interview/redis/redis的持久机制.md",
+    "docs/interview/redis/redis的分片原理.md",
+    "docs/interview/redis/redis的哨兵模式.md",
+    "docs/interview/redis/redis的主从复制原理.md",
+    "docs/interview/redis/redis的key过期机制.md",
     "docs/dev/git环境区分教程.md",
     "node_modules/@babel/types/package.json",
     "node_modules/@esbuild/darwin-arm64/README.md",
@@ -211,11 +216,6 @@
     "node_modules/@algolia/abtesting/README.md",
     "node_modules/@algolia/autocomplete-plugin-algolia-insights/README.md",
     "node_modules/@algolia/autocomplete-core/README.md",
-    "node_modules/@algolia/client-analytics/README.md",
-    "node_modules/@algolia/client-insights/README.md",
-    "node_modules/@babel/types/README.md",
-    "node_modules/@algolia/client-personalization/README.md",
-    "node_modules/@algolia/recommend/README.md",
-    "node_modules/@algolia/client-query-suggestions/README.md"
+    "node_modules/@algolia/client-analytics/README.md"
   ]
 }

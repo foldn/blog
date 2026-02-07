@@ -11,14 +11,14 @@
             "id": "6a74a9f1deec2aa9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "docs/dev/git环境区分教程.md",
-                "mode": "preview",
-                "source": false
+                "aFile": ".gitignore",
+                "bFile": ".gitignore",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "git环境区分教程"
+              "icon": "diff",
+              "title": "Diff: .gitignore  (Working Tree)"
             }
           }
         ]
@@ -179,8 +179,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "71fa460b7396f2b8",
+  "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
+    "docs/interview/home.md",
+    "docs/interview/redis/redis事务.md",
+    "docs/dev/git环境区分教程.md",
     "node_modules/@babel/types/package.json",
     "node_modules/@esbuild/darwin-arm64/README.md",
     "node_modules/@esbuild/darwin-arm64/package.json",
@@ -192,7 +195,6 @@
     "node_modules/@shikijs/themes/dist/vitesse-black.mjs",
     "node_modules/@shikijs/themes/dist/vitesse-black.d.mts",
     "node_modules/@shikijs/themes/dist/vesper.mjs",
-    "node_modules/@shikijs/themes/dist/vesper.d.mts",
     "node_modules/@shikijs/themes/README.md",
     "node_modules/@ai-sdk/gateway/README.md",
     "node_modules/@ai-sdk/gateway/CHANGELOG.md",
@@ -214,8 +216,6 @@
     "node_modules/@babel/types/README.md",
     "node_modules/@algolia/client-personalization/README.md",
     "node_modules/@algolia/recommend/README.md",
-    "node_modules/@algolia/client-query-suggestions/README.md",
-    "node_modules/@algolia/ingestion/README.md",
-    "node_modules/@algolia/monitoring/README.md"
+    "node_modules/@algolia/client-query-suggestions/README.md"
   ]
 }

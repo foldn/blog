@@ -28,8 +28,16 @@ export default defineConfig({
       collapsed: false,
       items: [
         {
+          text: 'git环境区分教程',
+          link: '/dev/git环境区分教程'
+        },
+        {
           text: 'jerbrains破解',
           link: '/dev/jerbrains破解'
+        },
+        {
+          text: 'mac装机软件',
+          link: '/dev/mac装机软件'
         },
         {
           text: 'vpn',
@@ -52,12 +60,22 @@ export default defineConfig({
       ]
     },
     {
+      text: 'java',
+      collapsed: true,
+      items: [
+        {
+          text: 'jvm',
+          link: '/interview/java/jvm'
+        }
+      ]
+    },
+    {
       text: 'redis',
       collapsed: true,
       items: [
         {
-          text: 'redis场景题',
-          link: '/interview/redis/redis场景题'
+          text: 'redis事务',
+          link: '/interview/redis/redis事务'
         },
         {
           text: 'redis的key过期机制',

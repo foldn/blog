@@ -181,6 +181,8 @@
   },
   "active": "6a74a9f1deec2aa9",
   "lastOpenFiles": [
+    "Untitled.md",
+    "docs/dev/jerbrains破解.md",
     "docs/dev/home.md",
     "docs/interview/redis/redis的持久机制.md",
     "docs/interview/home.md",
@@ -214,8 +216,6 @@
     "node_modules/@ai-sdk/react/CHANGELOG.md",
     "node_modules/@algolia/client-search/README.md",
     "node_modules/@iconify-json/simple-icons/README.md",
-    "node_modules/@algolia/abtesting/README.md",
-    "node_modules/@algolia/autocomplete-plugin-algolia-insights/README.md",
-    "node_modules/@algolia/autocomplete-core/README.md"
+    "node_modules/@algolia/abtesting/README.md"
   ]
 }

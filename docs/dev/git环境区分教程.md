@@ -22,6 +22,7 @@ vim ~/.gitconfig
 
 ⚠️ **路径一定要以 **`**/**`** 结尾**，否则不生效  
 `gitdir:` 匹配的是 `.git` 所在路径
+公司相关域名includeIf相关的配置一定要配置在全局gitconfig中，在gitconfig-work中只能在命令行生效，有些场景（如ide中）会失效
 
 ### 工作环境配置（`~/.gitconfig-work`）
 ```plain

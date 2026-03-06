@@ -127,3 +127,15 @@ ssh -T git@gitlab.com
 
 看到不同 GitHub 用户名就对了 ✅
 
+### 可能遇见的问题
+
+#### 使用ssh时，可能需要手动输入ssh私钥的密码，也就是passphrase（比如在执行go get XXXX时）
+
+1. 原因：SSH 在使用 id_work 私钥，但 ssh-agent 里没有缓存这个 key，所以每次调用 git/ssh 都要解密私钥。
+
+2. 解决方案：macOS 可以把 SSH key passphrase 存进 Keychain。 
+    执行命令：`ssh-add --apple-use-keychain ~/.ssh/id_work`
+    同时.ssh/config中需要增加内容：
+AddKeysToAgent yes   自动加入 ssh-agent
+UseKeychain yes   从 macOS keychain 读取
+
